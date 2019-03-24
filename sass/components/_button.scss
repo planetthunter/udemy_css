@@ -1,0 +1,55 @@
+.btn {
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    &:hover {
+        transform: translate(-50%, -55%);
+        box-shadow: 0 10px 20px $color-darker(0, 0, 0, 0.2);
+    }
+
+    &:active {
+        transform: translate(-50%, -55%);
+        box-shadow: 0 10px 10px $color-darker(0, 0, 0, 0.2);
+    }
+
+    &-white {
+        background-color: $color-white;
+        color: $color-dark-grey;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        display: inline-block;
+        transition: all .2s;
+        padding: 3px;
+        margin-bottom: 3rem;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        color: $color-primary;
+    }
+
+    &:hover {
+        background-color: $color-lighter;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-dark-grey, .20);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 1rem 2rem rgba($color-dark-grey, .20);
+        transform: translateY(0px);
+    }
+}
